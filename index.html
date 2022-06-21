@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+
+    <div id="setup">
+        <div id="input">
+            <input type="text" class="player" placeholder="Player 1" id="player1" required>
+            <input type="text" class="player" placeholder="Player 2" id="player2" required>
+            <button id="play">Play</button>
+        </div>
+    </div>
+
+    <!-- player-1 -->
+    <div id="resultArea">
+        <div class="result" id="player1">
+        </div>
+        <div class="result" id="player2">
+        </div>
+    </div>
+    <!-- player-2 -->
+
+    <!-- script -->
+    <script type="module" src="/scripts/main.js"></script>
+    <script>
+        let fn, man;
+        // function addScript(folder, filePaths) {
+        //     filePaths.forEach(path => {
+        //         let src = document.createElement('script');
+        //         src.src = folder + '/' + path + '.js';
+        //         document.body.appendChild(src);
+        //     });
+        // }
+
+        function addStyles(folder, filePaths) {
+            filePaths.forEach(path => {
+                let link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = folder + '/' + path + '.css';
+                document.head.appendChild(link);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // addScript('./scripts', [
+            //     "manager",
+            //     "functions",
+            //     "piece",
+            //     "holder",
+            //     "chess",
+            //     "player",
+            //     "app"
+            // ]);
+            // addStyles('./styles', [
+            //     "setup",
+            //     "main"
+            // ]);
+        });
+    </script>
+</body>
+
+</html>

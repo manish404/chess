@@ -1,0 +1,6 @@
+- new App
+- setUp()   // sets/creates two players
+- createBoard()     // creates chess board, with colored places/holders
+- assignHolders()   // lists initial places to place pieces
+- setPieces() places initial places     //
+- 
